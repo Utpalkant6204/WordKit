@@ -1,0 +1,23 @@
+{
+    "manifest_version":2,
+    "name": "WordKit",
+    "version": "0.0.1",
+    
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "js":["content.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action":{
+        "default_icon":"icon.png",
+        "default_popup":"popup.html"
+    },
+    "icons":{
+        "128":"icon1.png"
+    }
+    
+}
